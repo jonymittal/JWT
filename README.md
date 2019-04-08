@@ -1,6 +1,6 @@
 # JWT
 
-This Project is about just JSON Web Token (JWT) with Spring Security and Spring Boot.
+This Project is about JSON Web Token (JWT) with Spring Security and Spring Boot.
 
 ### Prerequisites
 
