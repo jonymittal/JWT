@@ -19,9 +19,9 @@ This project is build with with Maven 3 and Java 1.8.
 
 Just start the application with the Spring Boot maven plugin (mvn spring-boot:run). The application is running at http://localhost:8070.
 
-There is 4 Rest API present in this project, These API demonstrate how to Generate Access Token & how to use the Access Token in Other API and the different authorization exceptions.
+There is 4 rest API present in this project, These API demonstrate how to Generate Access Token & how to use the Access Token and the different authorization exceptions.
 
-The Sample Request of All API with their Response on Postman is Given as:
+The sample request of all API with their response on Postman is given as:
 
 **1. Sample Request to Signup User**
 ```
