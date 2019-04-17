@@ -21,6 +21,7 @@ Just start the application with the Spring Boot maven plugin (mvn spring-boot:ru
 
 There are 4 Rest API present in this project, These API demonstrate the different levels of access to the endpoints in the API and the different authorization exceptions:
 
+#### Request to Signup User
 ```
 Sample Request
 
