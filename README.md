@@ -113,8 +113,35 @@ Sample Response
     "status": "OK"
 }
 ```
+4 **Sample Request to Reset Password**
+```
+POST http://localhost:8070/JWT/v1/api/user/1/resetPassword
+-H "Content-Type: application/json"
+-d '{
+	"newPassword": "admin"
+}'
 
-
+Sample Response
+{
+    "code": "200",
+    "data": {
+        "user": {
+            "id": 1,
+            "fname": "jony",
+            "lname": "mittal",
+            "email": "user1@gmail.com",
+            "password": "$2a$10$.9lM.XYhBWH04zj1Up35rOfH4gkU45SIKvzV04Hih7OpowhB98WUy",
+            "lastPasswordResetDate": "2019-04-17T09:35:16.943+0000",
+            "role": {
+                "id": 2,
+                "role": "ROLE_USER"
+            }
+        }
+    },
+    "message": "password updates successfully.",
+    "status": "OK"
+}
+```
 ## Authors
 
 * **Jony Mittal**
