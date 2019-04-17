@@ -32,6 +32,28 @@ POST http://localhost:8070/JWT/v1/api/userSignup
 	"email": "user1@gmail.com",
 	"password": "user1"
 }'
+
+Sample Response
+{
+    "code": "200",
+    "data": {
+        "access_token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMUBnbWFpbC5jb20iLCJleHAiOjE1NTYxODI2MzEsImlhdCI6MTU1NTQ5MTQzMX0.xk2m0-fMJy07wGNvUBhAq2lASenMtW3ado37XTjSf0hn5zERE8iO78yyEZE7fBB42p5EatEXjjZ-XFR5Wpf12w",
+        "user": {
+            "id": 1,
+            "fname": "jony",
+            "lname": "mittal",
+            "email": "user1@gmail.com",
+            "password": "$2a$10$a3s662wciBGEmNhoyV9ux.pm6obtpaRK/Cta30Pf1vTd4JhZhrQfa",
+            "lastPasswordResetDate": null,
+            "role": {
+                "id": 2,
+                "role": "ROLE_USER"
+            }
+        }
+    },
+    "message": "Record created successfully.",
+    "status": "OK"
+}
 ```
 
 
