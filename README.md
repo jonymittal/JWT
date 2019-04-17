@@ -21,7 +21,7 @@ Just start the application with the Spring Boot maven plugin (mvn spring-boot:ru
 
 There are 4 Rest API present in this project, These API demonstrate the different levels of access to the endpoints in the API and the different authorization exceptions:
 
-1 **Sample Request to Signup User**
+**1. Sample Request to Signup User**
 ```
 POST http://localhost:8070/JWT/v1/api/userSignup
 -H "Content-Type: application/json"
@@ -55,7 +55,7 @@ Sample Response
 }
 ```
 
-2 **Sample Request to Login User**
+**2. Sample Request to Login User**
 ```
 POST http://localhost:8070/JWT/v1/api/userLogin
 -H "Content-Type: application/json"
@@ -87,7 +87,7 @@ Sample Response
     "status": "OK"
 }
 ```
-3 **Sample Request to Get User Profile**
+**3. Sample Request to Get User Profile**
 ```
 GET http://localhost:8070/JWT/v1/api/user/1
 -H "Authorization: Bearer <Access-Token>"
@@ -113,7 +113,7 @@ Sample Response
     "status": "OK"
 }
 ```
-4 **Sample Request to Reset Password**
+**4. Sample Request to Reset Password**
 ```
 POST http://localhost:8070/JWT/v1/api/user/1/resetPassword
 -H "Content-Type: application/json"
