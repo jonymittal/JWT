@@ -55,7 +55,7 @@ Sample Response
 }
 ```
 
-1 **Sample Request to Login User**
+2 **Sample Request to Login User**
 ```
 POST http://localhost:8070/JWT/v1/api/userLogin
 -H "Content-Type: application/json"
@@ -84,6 +84,32 @@ Sample Response
         }
     },
     "message": "Login successfull.",
+    "status": "OK"
+}
+```
+3 **Sample Request to Get User Profile**
+```
+GET http://localhost:8070/JWT/v1/api/user/1
+-H "Authorization: Bearer <Access-Token>"
+
+Sample Response
+{
+    "code": "302",
+    "data": {
+        "user": {
+            "id": 1,
+            "fname": "jony",
+            "lname": "mittal",
+            "email": "user1@gmail.com",
+            "password": "$2a$10$a3s662wciBGEmNhoyV9ux.pm6obtpaRK/Cta30Pf1vTd4JhZhrQfa",
+            "lastPasswordResetDate": null,
+            "role": {
+                "id": 2,
+                "role": "ROLE_USER"
+            }
+        }
+    },
+    "message": "Record found successfully.",
     "status": "OK"
 }
 ```
